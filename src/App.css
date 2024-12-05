@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orangered;
+}
+
+.container {
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px; /* Tamaño fijo opcional */
+    border: 2px black solid;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    margin: 10px;
+}
+
+.imgContainer {
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    height: 200px; /* Define una altura fija para el contenedor */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    background-color: red;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+}
+
+img {
+    max-width: 100%; /* Escala la imagen hasta el ancho del contenedor */
+    max-height: 100%; /* Escala la imagen hasta la altura del contenedor */
+    object-fit: contain; /* Asegura que la imagen se muestre completa sin recortarse */
+}
+
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinea los elementos verticalmente */
+    gap: 10px; /* Espaciado entre el input y el botón */
+    padding: 15px;
+}
+
+.inputContainer input {
+    height: 30px; /* Asegúrate de que el input tenga la misma altura que el botón */
+    font-size: 16px; /* Opcional, asegura consistencia de texto */
+}
+
+.inputContainer button {
+    background-color: chartreuse;
+    color: white;
+    width: 155px;
+    height: 45px; /* Igual que el input */
+    border: none; /* Elimina bordes por defecto */
+    cursor: pointer; /* Mejora la experiencia de usuario */
+    font-size: 16px; /* Opcional, asegura consistencia de texto */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido dentro del botón */
+}
